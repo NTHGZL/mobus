@@ -12030,6 +12030,8 @@ class Game {
      */
     addLetter = (letter) => {
         
+
+
         if(!this.isFinish()){
             if(this.currentTry.length === 1){
                 this.progress[this.lapCount] = [this.secretWord[0], '', '', '', '', '', '']
@@ -12231,7 +12233,10 @@ game.newGame()
 
 game.createTable()
 
-
+validate = () => {
+    if(game.currentTry.length === 7)
+                game.validateTry()
+}
 
 
 window.addEventListener('keydown', (event)=> {
@@ -12245,10 +12250,10 @@ window.addEventListener('keydown', (event)=> {
             if(game.currentTry.length === 7)
                 game.validateTry()
         }
-    
-    
-    
+
 })
+
+
 
 
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Adaptation du jeu motus pour le web !">
     <link rel="stylesheet" href="style.css">
+    
     <title>MOBUS</title>
 </head>
 <body>
@@ -21,6 +22,44 @@
         <div  id="error"></div>
         <div id="endgame">
           
+        </div>
+        
+        <div id="mobile-keyboard">
+            <div class="line">
+                <div class="keytouch" onclick="game.addLetter('A')">A</div>
+                <div class="keytouch" onclick="game.addLetter('Z')">Z</div>
+                <div class="keytouch" onclick="game.addLetter('E')">E</div>
+                <div class="keytouch" onclick="game.addLetter('R')">R</div>
+                <div class="keytouch" onclick="game.addLetter('T')">T</div>
+                <div class="keytouch" onclick="game.addLetter('Y')">Y</div>
+                <div class="keytouch" onclick="game.addLetter('U')">U</div>
+                <div class="keytouch" onclick="game.addLetter('I')">I</div>
+                <div class="keytouch" onclick="game.addLetter('O')">O</div>
+                <div class="keytouch" onclick="game.addLetter('P')">P</div>
+            </div>
+            <div class="line">
+                <div class="keytouch" onclick="game.addLetter('Q')">Q</div>
+                <div class="keytouch" onclick="game.addLetter('S')">S</div>
+                <div class="keytouch" onclick="game.addLetter('D')">D</div>
+                <div class="keytouch" onclick="game.addLetter('F')">F</div>
+                <div class="keytouch" onclick="game.addLetter('G')">G</div>
+                <div class="keytouch" onclick="game.addLetter('H')">H</div>
+                <div class="keytouch" onclick="game.addLetter('J')">J</div>
+                <div class="keytouch" onclick="game.addLetter('K')">K</div>
+                <div class="keytouch" onclick="game.addLetter('L')">L</div>
+                <div class="keytouch" onclick="game.addLetter('M')">M</div>
+            </div>
+            <div class="line">
+                <div class="keytouch" onclick="game.addLetter('W')">W</div>
+                <div class="keytouch" onclick="game.addLetter('X')">X</div>
+                <div class="keytouch" onclick="game.addLetter('C')">C</div>
+                <div class="keytouch" onclick="game.addLetter('V')">V</div>
+                <div class="keytouch" onclick="game.addLetter('B')">B</div>
+                <div class="keytouch" onclick="game.addLetter('N')">N</div>
+                <div class="keytouch" onclick="game.removeLetter()">⌫</div>
+                <div class="keytouch enter" onclick="validate()">Enter</div>
+            </div>
+            
         </div>
     </main>
     <script src="script.js"></script>
