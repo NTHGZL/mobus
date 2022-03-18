@@ -96,7 +96,7 @@ td.includes{
         font-size: 20px;
     }
     tr{
-        height: 30px; !important
+        height: 30px; 
     }
     #mobile-keyboard{
         display: flex;
@@ -118,7 +118,10 @@ td.includes{
         margin: 5px;
     }
     .keytouch.enter{
-        width: 100px;
+        width: 80px;
+    }
+    .keytouch.remove{
+        width: 30px;
     }
     }
 
