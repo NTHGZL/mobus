@@ -12016,7 +12016,7 @@ class Game {
 
 
     getRandomInt = () => {
-        return Math.floor(Math.random() * (8505));
+        return Math.floor(Math.random() * (words.length));
     }
 
     getNewWord = () => {
