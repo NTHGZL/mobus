@@ -12029,6 +12029,7 @@ class Game {
      * @param {string} letter 
      */
     addLetter = (letter) => {
+        
         if(!this.isFinish()){
             if(this.currentTry.length === 1){
                 this.progress[this.lapCount] = [this.secretWord[0], '', '', '', '', '', '']
@@ -12044,7 +12045,9 @@ class Game {
     }
 
     removeLetter = () =>{
+        
         if(!this.isFinish()){
+            document.getElementById('error').innerHTML = ''
             if(this.currentTry.length >= 2){
             
                 this.currentTry.pop()
